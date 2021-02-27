@@ -70,6 +70,8 @@ def nlp():
     story = request.form.get("story")
     gender  = request.form.get("gender")
     name  = request.form.get("fullname")
+    # need to integrate InstaMD function from classification.ipynb here
+    # This route is called from "evaluate.html" and renders "report.html" with results
 
 if __name__ == "__main__":
     db.create_all()
